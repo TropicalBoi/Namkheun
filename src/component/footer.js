@@ -8,21 +8,21 @@ const Footer = () => {
       position: absolute;
       bottom: 0;
       width: 100vw;
-      height: 120px;
+      height: 9.5vh;
       background-color: white;
       box-shadow: 0px -20px 30px white;
       z-index: 100;
       `}>
-      <Link className={css`
+      <Link to="/archive" className={css`
         position: absolute;
         width: fit-content;
         height: fit-content;
-        right: 35px;
-        bottom: 27px;
+        right: 1.82vw;
+        bottom: 2.85vh;
         font-family: moderat-meduim;
         font-style: normal;
         font-weight: 500;
-        font-size: 60px;
+        font-size: 3.125vw;
       `}>Archive</Link>
     </div>
   )

@@ -2,7 +2,7 @@ import * as React from "react";
 import { css } from "@emotion/css";
 import Layout from "../component/layout";
 
-const IndexPage = () => {
+const Archive = () => {
   return (
     <Layout>
       <div className={css`
@@ -14,4 +14,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default Archive
