@@ -53,7 +53,6 @@ const About = () => {
             font-style: normal;
             font-weight: normal;
             font-size: 2.86vw;
-            line-height: 8.23vh;
             letter-spacing: 0.02em;
           `}>
             น้ำขึ้นเป็นคอลเลคทีฟที่ทำงานกับตัวหนังสือ น้ำขึ้นก่อตัวจากการเม้ามอยโฟ่ฝอยระหว่าง
