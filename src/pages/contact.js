@@ -64,7 +64,8 @@ const Contact = () => {
         `}>
           Alternatively, check out
           our social media accounts
-          for regular updates.<br></br>
+          for regular updates.
+          <br></br>
           <br></br>
           IG <a href="https://www.instagram.com/namkheun/">@namkheun</a>
           <br></br>

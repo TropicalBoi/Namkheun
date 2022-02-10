@@ -36,14 +36,14 @@ const About = () => {
               Namkheun is translated as ‘rising tides’,
               <span> (น้ำขึ้น) </span>
               is a literary collective based in Bangkok, Thailand.
-            </p>
-            <p>
+              <br></br>
+              <br></br>
               Namkheun is a product of disgruntled text exchanges and
               over-the-phone gossip sessions between two friends over the years.
               Together, we raged over the state of the world. Together,
               we shared memes, unfulfilled dreams, and personal insights. And so in 2020,
-            </p>
-            <p>
+              <br></br>
+              <br></br>
               Namkheun materialised as an extension of such activities, an open chat if you will.
             </p>
           </div>
@@ -52,7 +52,7 @@ const About = () => {
             font-family: BaiJamjuree-Regular;
             font-style: normal;
             font-weight: normal;
-            font-size: 2.86vw;
+            font-size: 2.86vw;เ
             letter-spacing: 0.02em;
           `}>
             น้ำขึ้นเป็นคอลเลคทีฟที่ทำงานกับตัวหนังสือ น้ำขึ้นก่อตัวจากการเม้ามอยโฟ่ฝอยระหว่าง
