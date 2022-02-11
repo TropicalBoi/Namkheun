@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `namkheunMock`,
+    title: `namkheun`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-netlify-cms", "gatsby-plugin-emotion", {
@@ -27,36 +27,5 @@ module.exports = {
         "path": "./src/pages/"
       },
       __key: "pages"
-    }, {
-      resolve: 'gatsby-plugin-local-search',
-      options: {
-        name: 'pages',
-        engine: 'flexsearch',
-        query: `
-          query {
-            allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-              nodes {
-                excerpt
-                fields {
-                  slug
-                }
-                frontmatter {
-                  date(formatString: "MMMM DD, YYYY")
-                  title
-                }
-              }
-            }
-          }`,
-        ref: 'slug',
-        index: ['title', 'excerpt'],
-        store: ['title', 'excerpt', 'date', 'slug'],
-        normalizer: ({ data }) =>
-          data.allMarkdownRemark.nodes.map(node => ({
-            title: node.frontmatter.title,
-            excerpt: node.excerpt,
-            date: node.frontmatter.date,
-            slug: node.fields.slug,
-          })),
-      }
     }]
 };
