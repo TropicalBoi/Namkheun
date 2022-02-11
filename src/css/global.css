@@ -57,6 +57,16 @@ span {
   letter-spacing: 0.02em;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 @font-face {
   font-family: moderat-meduim;
   src: url(../font/Moderat-Medium.woff);
