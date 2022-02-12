@@ -1,7 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types"
 import { graphql } from 'gatsby'
-import { css } from "@emotion/css";
 import Layout from "../component/layout";
 
 const ContentPageTemplate = ({ data }) => {
@@ -9,7 +8,7 @@ const ContentPageTemplate = ({ data }) => {
   return (
     <Layout>
 
-      <div className="content">
+      <div className="engTxtContent">
         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </div>
 

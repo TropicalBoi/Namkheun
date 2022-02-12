@@ -49,6 +49,15 @@ span {
   letter-spacing: 0.02em;
 }
 
+.engTxtContent {
+  font-family: moderat-meduim;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.125vw;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 .thaiTxt {
   font-family: BaiJamjuree-Regular;
   font-style: normal;
