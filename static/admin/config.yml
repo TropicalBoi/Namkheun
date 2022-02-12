@@ -2,12 +2,12 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: images/uploadsnp,
+media_folder: "static/images/uploads"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "static/content/blog"
+  - name: "Article"
+    label: "article"
+    folder: "src/content/article"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -15,3 +15,17 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+  - name: "Pages"
+    label: "pages"
+    files:
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "about-page",
+            }
+          - { label: "Title", name: "title", widget: "string" }
