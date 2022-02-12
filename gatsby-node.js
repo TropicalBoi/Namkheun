@@ -29,15 +29,15 @@ exports.createPages = ({ actions, graphql }) => {
     }
 
     // Filter out the footer, navbar, and meetups so we don't create pages for those
-    const postOrPage = result.data.allMarkdownRemark.edges.filter(edge => {
-      if (edge.node.frontmatter.templateKey === "navbar") {
-        return false;
-      } else if (edge.node.frontmatter.templateKey === "footer") {
-        return false;
-      } else {
-        return !Boolean(edge.node.fields.slug.match(/^\/meetups\/.*$/));
-      }
-    });
+    // const postOrPage = result.data.allMarkdownRemark.edges.filter(edge => {
+    //   if (edge.node.frontmatter.templateKey === "navbar") {
+    //     return false;
+    //   } else if (edge.node.frontmatter.templateKey === "footer") {
+    //     return false;
+    //   } else {
+    //     return !Boolean(edge.node.fields.slug.match(/^\/meetups\/.*$/));
+    //   }
+    // });
 
     postOrPage.forEach(edge => {
       let component, pathName;
@@ -52,7 +52,6 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: pathName,
         component,
-        // additional data can be passed via context
         context: {
           id,
         },
