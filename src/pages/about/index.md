@@ -1,9 +1,10 @@
 ---
 templateKey: about-page
 title: about Namkheun
+path: /about
 ---
 
-Namkheun is translated as ‘rising tides’, (น้ำขึ้น) is a literary collective based in Bangkok, Thailand.
+# Namkheun is translated as ‘rising tides’, (น้ำขึ้น) is a literary collective based in Bangkok, Thailand.
 
 Namkheun is a product of disgruntled text exchanges and over-the-phone gossip sessions between two friends over the years. Together, we raged over the state of the world. Together, we shared memes, unfulfilled dreams, and personal insights. And so in 2020,
 

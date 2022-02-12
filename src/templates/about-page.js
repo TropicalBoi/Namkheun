@@ -1,10 +1,12 @@
 import * as React from "react";
+import PropTypes from "prop-types"
 import { graphql } from 'gatsby'
 import ReactMarkdown from "react-markdown";
 import { css } from "@emotion/css";
 import Layout from "../component/layout";
 
 const AboutPageTemplate = ({ data }) => {
+  console.log(data.markdownRemark.html)
   return (
     <Layout>
       <div className={css`
@@ -29,7 +31,8 @@ const AboutPageTemplate = ({ data }) => {
             flex-direction: column;
             justify-content: space-between;
           `}>
-            <ReactMarkdown source={data.page.html} />
+            <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+            {/* <ReactMarkdown source={data.markdownRemark.html} /> */}
           </div>
         </div>
       </div>
