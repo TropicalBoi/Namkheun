@@ -153,7 +153,16 @@ const Cyberfem = () => {
               </p>
             )}
           </div>
-          <p>PDF ;)</p>
+          <p className={css`
+            position: absolute;
+            left: 25.15625vw;
+            top: 66.31vh;
+            font-family: Moderat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.45vw;
+            letter-spacing: 0.02em;
+          `}>PDF ;)</p>
           <img
             src={CyberFemContent}
             className={css`
