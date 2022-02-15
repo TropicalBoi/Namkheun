@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   padding: 0;
   margin: 0;
   overflow: hidden;
@@ -16,11 +17,14 @@ a:hover {
   animation-iteration-count: infinite;
 }
 
-textarea:focus, input:focus {
+textarea:focus,
+input:focus {
   outline: none;
 }
 
-button, input[type="submit"], input[type="reset"] {
+button,
+input[type="submit"],
+input[type="reset"] {
   background: none;
   color: inherit;
   border: none;
@@ -84,6 +88,11 @@ span {
 @font-face {
   font-family: BaiJamjuree-Regular;
   src: url(../font/BaiJamjuree-Regular.ttf);
+}
+
+@font-face {
+  font-family: ABC-Marfa-Mono;
+  src: url(../font/ABCMarfaMonoVariable-Trial.ttf);
 }
 
 .MenuLink {

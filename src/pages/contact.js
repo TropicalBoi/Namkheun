@@ -59,21 +59,26 @@ const Contact = () => {
             value="Subscibe" />
         </p>
         <p className={css`
+          position: absolutel;
+          top: 17.7vh;
+          left: 50vw;
           width: 39.89vw;
           height: 60.82vh;
+          line-height: 6.86vh;
         `}>
-          Alternatively, check out
-          our social media accounts
-          for regular updates.
+          For regular updates, 
+          follow us on
           <br></br>
           <br></br>
-          IG <a href="https://www.instagram.com/namkheun/">@namkheun</a>
+          IG <a href="https://www.instagram.com/namkheun/" target="_blank" without rel="noreferrer">@namkheun</a>
           <br></br>
-          Twitter <a href="https://twitter.com/namkheun">@namkheun</a>
+          Twitter <a href="https://twitter.com/namkheun" target="_blank" without rel="noreferrer">@namkheun</a>
           <br></br>
-          FB <a href="https://www.facebook.com/namkheun"><span>น้ำขึ้น</span> Namkheun</a>
+          FB <a href="https://www.facebook.com/namkheun" target="_blank" without rel="noreferrer"><span>น้ำขึ้น</span> Namkheun</a>
           <br></br>
-          Info@namkheun.com
+          <br></br>
+          Alternatively, write to us at
+          collective@namkheun.com
         </p>
       </div>
     </Layout >

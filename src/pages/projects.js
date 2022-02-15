@@ -15,55 +15,68 @@ const Projects = () => {
       `}>
         <div className={css`
         width: 100vw;
-        height: 229.56vh;
+        height: 230vh;
         background-color: white;
       `}>
+          <img
+            src={ProjectsImages.Manifesto}
+            className={css`
+              position: absolute;
+              width: 739px;
+              height: auto;
+              left: 105px;
+              top: 461px;
+              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            `}
+            alt="Manifesto"
+          />
           <img
             src={ProjectsImages.GOpenAcc}
             className={css`
               position: absolute;
-              width: 13.4375vw;
+              width: 258px;
               height: auto;
-              left: 38.69vw;
-              top: 27.66vh;
+              left: 210px;
+              top: 690px;
               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             `}
-            alt="Guerilla open access menifesto"
+            alt="Guerilla open access manifesto"
           />
           <img
             src={ProjectsImages.CyberFem}
             className={css`
               position: absolute;
-              width: 13.64vw;
+              width: 262px;
               height: auto;
-              left: 60.57vw;
-              top: 29.88vh;
+              left: 872px;
+              top: 283px;
               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));          
             `}
-            alt="The cyber feminist menifesto for the 21st century"
+            alt="The cyber feminist manifesto for the 21st century"
           />
           <img
             src={ProjectsImages.DGTalHumn}
             className={css`
               position: absolute;
-              width:  26.71875vw;
+              width: 513px;
               height: auto;
-              left: 18.69vw;
-              top: 110.66vh;
+              left: 535px;
+              top: 1140px;
               filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             `}
-            alt="Digital humanities menifesto"
+            alt="Digital humanities manifesto"
           />
           <img
             src={ProjectsImages.QNation}
             className={css`
               position: absolute;
-              width: 27.8125vw;
+              width: 534px;
               height: auto;
-              left: 53.48vw;
-              top: 112.59vh;
+              left: 1243px;
+              top: 825px;
+              filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             `}
-            alt="The queer nation menifesto"
+            alt="The queer nation manifesto"
           />
         </div>
       </div>

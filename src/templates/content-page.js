@@ -1,38 +1,38 @@
-import * as React from "react";
-import PropTypes from "prop-types"
-import { graphql } from 'gatsby'
-import Layout from "../component/layout";
+// import * as React from "react";
+// import PropTypes from "prop-types"
+// import { graphql } from 'gatsby'
+// import Layout from "../component/layout";
 
-const ContentPageTemplate = ({ data }) => {
-  console.log(data.markdownRemark.html)
-  return (
-    <Layout>
+// const ContentPageTemplate = ({ data }) => {
+//   console.log(data.markdownRemark.html)
+//   return (
+//     <Layout>
 
-      <div className="engTxtContent">
-        <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
-      </div>
+//       <div className="engTxtContent">
+//         <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+//       </div>
 
-      {/* <ReactMarkdown source={data.markdownRemark.html} /> */}
+//       {/* <ReactMarkdown source={data.markdownRemark.html} /> */}
 
-    </Layout>
-  )
-}
+//     </Layout>
+//   )
+// }
 
-export default ContentPageTemplate;
-
-
-ContentPageTemplate.propTypes = {
-  data: PropTypes.object.isRequired,
-};
+// export default ContentPageTemplate;
 
 
-export const contentPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-      }
-    }
-  }
-`;
+// ContentPageTemplate.propTypes = {
+//   data: PropTypes.object.isRequired,
+// };
+
+
+// export const contentPageQuery = graphql`
+//   query AboutPage($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       html
+//       frontmatter {
+//         title
+//       }
+//     }
+//   }
+// `;

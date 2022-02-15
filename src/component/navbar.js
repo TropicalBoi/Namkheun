@@ -1,43 +1,56 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import { css } from "@emotion/css";
-import searchIcon from "../images/SearchIcon.png";
+// import searchIcon from "../images/SearchIcon.png";
 
 const Navbar = () => {
   return (
-    <div className={css`
+    <nav
+      className={css`
           position: absolute;
           top: 0;
           width: 100%;
-          height: 20vh;
+          height: 25vh;
           font-family: moderat-meduim;
-          font-style: normal;
+          font-style: normalว
           font-weight: 500;
           font-size: 3.125vw;
-          background-color: white;
-          box-shadow: 0px 20px 30px white;
+          letter-spacing: 0.02em;
+          line-height: 6.33vh;
+          background-image: linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,1), rgba(255,255,255,0));
           z-index: 100;
-        `}>
-      <div className={css`
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            position: absolute;
-            top: 3.69vh;
-            left: 1.82vw;
-          `}>
-        <Link to="/" >Namkheun Collective</Link>
-        <div className={css`
+        `}
+    >
+      <div
+        className={css`
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          position: absolute;
+          top: 2.9vh;
+          left: 1.82vw;
+        `}
+      >
+        <Link to="/">Namkheun Collective</Link>
+        <div
+          className={css`
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
-          `}>
-          <Link to="/about" className="MenuLink">About</Link>
-          <Link to="/projects" className="MenuLink">Projects</Link>
-          <Link to="/contact" className="MenuLink">Contact</Link>
+          `}
+        >
+          <Link to="/about" className="MenuLink">
+            About
+          </Link>
+          <Link to="/projects" className="MenuLink">
+            Projects
+          </Link>
+          <Link to="/contact" className="MenuLink">
+            Contact
+          </Link>
         </div>
       </div>
-      <img
+      {/* <img
         src={searchIcon}
         className={css`
           position: absolute;
@@ -47,9 +60,9 @@ const Navbar = () => {
           right: 1.82vw;
         `}
         alt="search"
-      />
-    </div>
-  )
-}
+      /> */}
+    </nav>
+  );
+};
 
-export default Navbar
+export default Navbar;
